@@ -137,7 +137,7 @@
 
   handlers:
     - name: restart supervisor
-      supervisorctl: name=gunicorn_mezzanine state=restarted
+      supervisorctl: name=gunicorn_mezzanine-example state=restarted
       sudo: True
     - name: restart nginx
       service: name=nginx state=restarted
