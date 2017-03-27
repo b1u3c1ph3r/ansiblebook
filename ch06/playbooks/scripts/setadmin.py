@@ -12,7 +12,7 @@ import sys
 proj_dir = os.path.expanduser(os.environ['PROJECT_DIR'])
 sys.path.append(proj_dir)
 
-from django.core.wsgi import get_wsgi_applicatio
+from django.core.wsgi import get_wsgi_application
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 application = get_wsgi_application()
 
