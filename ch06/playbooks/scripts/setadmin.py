@@ -12,7 +12,9 @@ import sys
 proj_dir = os.path.expanduser(os.environ['PROJECT_DIR'])
 sys.path.append(proj_dir)
 
+from django.core.wsgi import get_wsgi_applicatio
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+application = get_wsgi_application()
 
 
 from mezzanine.utils.models import get_user_model
